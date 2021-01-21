@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Fizzbuzz
-{ 
+{
     class Program
-    { 
+    {
         static void Main(string[] args)
         {
             while (true)
@@ -22,7 +22,9 @@ namespace Fizzbuzz
 
                     var fizzbuzz = new FizzBuzz();
 
-                    fizzbuzz.AnalyzeNumber(userNumber);
+                    Console.WriteLine(fizzbuzz.AnalyzeNumber(userNumber));
+
+                   
                     break;
                 }
                 catch (Exception ex)

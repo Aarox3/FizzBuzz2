@@ -8,28 +8,28 @@ namespace Fizzbuzz
 {
     public class FizzBuzz
     {
-        public void AnalyzeNumber(int userNumber)
+        public string AnalyzeNumber(int userNumber)
         {
 
             if (userNumber % 5 == 0 && userNumber % 3 == 0)
             {
-
-                Console.WriteLine("FizzBuzz");
+                return "FizzBuzz";
             }
+
             else if (userNumber % 3 == 0)
             {
-
-                Console.WriteLine("Fizz");
+                return "Fizz";
             }
+
             else if (userNumber % 5 == 0)
             {
-
-                Console.WriteLine("Buzz");
+                return "Buzz";
             }
 
             else
             {
-                Console.WriteLine(userNumber);
+                string userNumberstring = userNumber.ToString();
+                return userNumberstring;
             }
         }
 
